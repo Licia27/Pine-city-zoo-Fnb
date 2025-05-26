@@ -264,11 +264,20 @@ input:focus, textarea:focus {
   }
 
   
+/* filepath: c:\Users\vilak\Downloads\Pine-city-zoo-Fnb\styles.css */
 @media (max-width: 600px) {
-  .sound-trigger {
+  .sound-trigger,
+  .sound-trigger.mobile {
     min-width: 48px;
     min-height: 48px;
     font-size: 1.5em;
+    width: auto;
+    height: auto;
+    padding: 0 16px;
+  }
+  .sound-trigger.mobile span {
+    display: inline;
+    font-size: 1em;
   }
 }
   
