@@ -49,6 +49,10 @@ body {
   z-index: 500;
 }
 
+#main-home {
+    margin-top: 120px; /* Adjusted for header height */
+}
+
 #tabs-top { top: 80px; }
 #tabs-bottom { bottom: 0; }
 
@@ -69,21 +73,18 @@ body {
 
 /* Main Content Area */
 #main {
-  margin-top: 130px;
-  background: linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0.9)), 
-              url('images/leaf-pattern.png');
-  min-height: calc(100vh - 220px);
-
-  }
-
-  main {
-  padding-top: 100px; /* Adjust as needed for your header/nav height */
+margin-top: 119px;
+background: url('images/map-blur.png');
+background-repeat: repeat-y;
 }
-
-
-#content {
-  padding: 20px 0 50px;
+#content{
+padding-top: 1px;
+padding-bottom: 50px;
 }
+  
+
+
+
 
 /* ===== ANIMAL STYLES ===== */
 .animal-grid {
