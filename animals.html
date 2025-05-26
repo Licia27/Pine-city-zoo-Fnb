@@ -3,111 +3,295 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Animals</title>
-
+    <meta name="description" content="Meet all Pine City Zoo residents - from majestic elephants to playful penguins">
+    <title>All Animals - Pine City Zoo</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="animals.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-   <div id="header">
-<img src="images/logo.png"/>
-</div>
-<div id="tabs-top">
-<a href="animals.html">ANIMALS</a>
-<a href="index.html">MAP</a>
-<a href="places.html">PLACES</a>
-</div>
-<div id="main">
-<div id="content">
-<a class="info-box" href="elephants.html">
-<img class="right" src="images/next-arrow.png"/>
-<img src="images/elephant-tn.png"/>
-<h3>ELEPHANT</h3>
-<p>Gentle giants of the jungle</p>
-</a>
-<a class="info-box" href="koalas.html">
-<img class="right" src="images/next-arrow.png"/>
-<img src="images/koala-tn.png"/>
-<h3>KOALA</h3>
-<p>Come take a look at the cute koala's</p>
-</a>
-<a class="info-box" href="monkey.html">
-<img class="right" src="images/next-arrow.png"/>
-<img src="images/monkey-tn.png"/>
-<h3>MONKEYS</h3>
-<p>Playful monkeys are cleverer than you think</p>
-</a>
-<a class="info-box" href="warthong.html">
-<img class="right" src="images/next-arrow.png"/>
-<img src="images/warthog-tn.png"/>
-<h3>WARTHONGS</h3>
-<p>Find out more about this funny looking-fellow </p>
-</a>
-<a class="info-box" href="gorillas.html">
-<img class="right" src="images/next-arrow.png"/>
-<img src="images/gorilla-tn.png"/>
-<h3>GORILLAS</h3>
-<p>Kong the gorilla is much friendlier than he looks</p>
-</a>
-<a class="info-box" href="lions.html">
-<img class="right" src="images/next-arrow.png"/>
-<img src="images/lion-tn.png"/>
-<h3>LIONS</h3>
-<p>The king of the jungle awaits for your visit</p>
-</a>
-<a class="info-box" href="pandas.html">
-<img class="right" src="images/next-arrow.png"/>
-<img src="images/panda-tn.png"/>
-<h3>PANDAS</h3>
-<p>The pandas seem to be everyones favourite</p>
-</a>
-<a class="info-box" href="giraffes.html">
-<img class="right" src="images/next-arrow.png"/>
-<img src="images/giraffe-tn.png"/>
-<h3>GIRAFFES</h3>
-<p>Our giraffes love company</p>
-</a>
-<a class="info-box" href="gemboks.html">
-<img class="right" src="images/next-arrow.png"/>
-<img src="images/gemsbok-tn.png"/>
-<h3>GEMBOKS</h3>
-<p>Come and see the majestic gemboks</p>
-</a>
+    
 
-<a class="info-box" href="zebras.html">
-    <img class="right" src="images/next-arrow.png"/>
-    <img src="images/zebra-tn.jpeg"/>
-    <h3>ZEBRAS</h3>
-    <p>See the striking stripes of our zebras</p>
-</a>
+<header id="header">
+  <img src="images/logo.png" alt="Pine City Zoo logo">
+</header>
 
+<nav id="tabs-top">
+  <a href="animals.html" class="active"><i class="fas fa-paw"></i> ANIMALS</a>
+  <a href="index.html"><i class="fas fa-map-marked-alt"></i> MAP</a>
+  <a href="places.html"><i class="fas fa-tree"></i> PLACES</a>
+</nav>
 
-<a class="info-box" href="tigers.html">
-    <img class="right" src="images/next-arrow.png"/>
-    <img src="images/tiger-tn.png"/>
-    <h3>TIGERS</h3>
-    <p>Marvel at the power and beauty of our majestic tigers</p>
-</a>
+<main>
+  <div class="animal-grid">
 
-<a class="info-box" href="rhinos.html">
-    <img class="right" src="images/next-arrow.png"/>
-    <img src="images/rhino-tn.jpeg"/>
-    <h3>RHINOS</h3>
-    <p>Meet the mighty rhinos, protectors of the savannah</p>
-</a>
+    
+    <article class="animal-card">
+      <a href="elephants.html" class="info-box">
+        <img src="images/elephant-tn.png" alt="Elephant" class="animal-thumbnail">
+        <div class="animal-info">
+          <h3>ELEPHANTS</h3>
+          <p>Gentle giants of the savanna <span class="conservation">(Endangered)</span></p>
+          <div class="quick-fact"><i class="fas fa-info-circle"></i> Trunks contain 40,000 muscles!</div>
+        </div>
+        <button class="sound-trigger mobile" data-sound="sounds/elephant.mp3" aria-label="Play elephant sound">
+          <i class="fas fa-volume-up"></i>
+          <span>Hear Sound</span>
+        </button>
+      </a>
+    </article>
 
-<a class="info-box" href="flamingos.html">
-    <img class="right" src="images/next-arrow.png"/>
-    <img src="images/flamingos-tn.jpg"/>
-    <h3>FLAMINGOS</h3>
-    <p>Enjoy the vibrant colors and graceful poses of our flamingos</p>
-</a>
-</div>
-</div>
-<div id="tabs-bottom">
-<a href="weather.html">WEATHER</a>
-<a href="feedback.html">FEEDBACK</a>
-</div> 
+    
+    <article class="animal-card">
+      <a href="lions.html" class="info-box">
+        <img src="images/lion-tn.png" alt="Lion" class="animal-thumbnail">
+        <div class="animal-info">
+          <h3>LIONS</h3>
+          <p>Savanna royalty</p>
+          <div class="quick-fact"><i class="fas fa-info-circle"></i> Roar heard 8km away</div>
+        </div>
+        <button class="sound-trigger mobile" data-sound="sounds/lion.mp3" aria-label="Play lion sound">
+          <i class="fas fa-volume-up"></i>
+          <span>Hear Sound</span>
+        </button>
+      </a>
+    </article>
+
+        
+    <article class="animal-card">
+      <a href="koalas.html" class="info-box">
+        <img src="images/koala-tn.png" alt="Koala" class="animal-thumbnail">
+        <div class="animal-info">
+          <h3>KOALAS</h3>
+          <p>Sleepy eucalyptus lovers from Australia</p>
+          <div class="quick-fact"><i class="fas fa-info-circle"></i> Sleep up to 20 hours a day</div>
+        </div>
+        <button class="sound-trigger mobile" data-sound="sounds/koala.mp3" aria-label="Play koala sound">
+          <i class="fas fa-volume-up"></i>
+          <span>Hear Sound</span>
+        </button>
+      </a>
+    </article>
+
+    
+    <article class="animal-card">
+      <a href="monkeys.html" class="info-box">
+        <img src="images/monkey-tn.png" alt="Monkey" class="animal-thumbnail">
+        <div class="animal-info">
+          <h3>MONKEYS</h3>
+          <p>Playful primates of the canopy</p>
+          <div class="quick-fact"><i class="fas fa-info-circle"></i> Use tails for balance and swinging</div>
+        </div>
+        <button class="sound-trigger mobile" data-sound="sounds/monkey.mp3" aria-label="Play monkey sound">
+          <i class="fas fa-volume-up"></i>
+          <span>Hear Sound</span>
+        </button>
+      </a>
+    </article>
+
+    
+    <article class="animal-card">
+      <a href="warthogs.html" class="info-box">
+        <img src="images/warthog-tn.png" alt="Warthog" class="animal-thumbnail">
+        <div class="animal-info">
+          <h3> WARTHOGS</h3>
+          <p>Quirky grazers with impressive tusks</p>
+          <div class="quick-fact"><i class="fas fa-info-circle"></i> Kneel while eating</div>
+        </div>
+        <button class="sound-trigger mobile" data-sound="sounds/warthogs.mp3" aria-label="Play warthog sound">
+          <i class="fas fa-volume-up"></i>
+          <span>Hear Sound</span>
+        </button>
+      </a>
+    </article>
+
+    
+    <article class="animal-card">
+      <a href="gorillas.html" class="info-box">
+        <img src="images/gorilla-tn.png" alt="Gorilla" class="animal-thumbnail">
+        <div class="animal-info">
+          <h3>GORILLAS</h3>
+          <p>Gentle giants of the forest</p>
+          <div class="quick-fact"><i class="fas fa-info-circle"></i> Share 98% of DNA with humans</div>
+        </div>
+        <button class="sound-trigger mobile" data-sound="sounds/gorilla.mp3" aria-label="Play gorilla sound">
+          <i class="fas fa-volume-up"></i>
+          <span>Hear Sound</span>
+        </button>
+      </a>
+    </article>
+
+    
+    <article class="animal-card">
+      <a href="pandas.html" class="info-box">
+        <img src="images/panda-tn.png" alt="Panda" class="animal-thumbnail">
+        <div class="animal-info">
+          <h3>PANDAS</h3>
+          <p>Bamboo-loving bears from China</p>
+          <div class="quick-fact"><i class="fas fa-info-circle"></i> Spend up to 14 hours eating daily</div>
+        </div>
+        <button class="sound-trigger mobile" data-sound="sounds/panda.mp3" aria-label="Play panda sound">
+          <i class="fas fa-volume-up"></i>
+          <span>Hear Sound</span>
+        </button>
+      </a>
+    </article>
+
+    
+    <article class="animal-card">
+      <a href="giraffes.html" class="info-box">
+        <img src="images/giraffe-tn.png" alt="Giraffe" class="animal-thumbnail">
+        <div class="animal-info">
+          <h3>GIRAFFES</h3>
+          <p>Tallest animals on earth</p>
+          <div class="quick-fact"><i class="fas fa-info-circle"></i> Tongues can be 45cm long</div>
+        </div>
+        <button class="sound-trigger mobile" data-sound="sounds/giraffe.mp3" aria-label="Play giraffe sound">
+          <i class="fas fa-volume-up"></i>
+          <span>Hear Sound</span>
+        </button>
+      </a>
+    </article>
+
+    
+    <article class="animal-card">
+      <a href="gemsboks.html" class="info-box">
+        <img src="images/gemsbok-tn.png" alt="Gemsbok" class="animal-thumbnail">
+        <div class="animal-info">
+          <h3>GEMSBOKS</h3>
+          <p>Desert antelope with long, straight horns</p>
+          <div class="quick-fact"><i class="fas fa-info-circle"></i> Can survive without water for weeks</div>
+        </div>
+        <button class="sound-trigger mobile" data-sound="sounds/gemsbok.mp3" aria-label="Play gemsbok sound">
+          <i class="fas fa-volume-up"></i>
+          <span>Hear Sound</span>
+        </button>
+      </a>
+    </article>
+
+    
+    <article class="animal-card">
+      <a href="zebras.html" class="info-box">
+        <img src="images/zebra-tn.jpeg" alt="Zebra" class="animal-thumbnail">
+        <div class="animal-info">
+          <h3>ZEBRAS</h3>
+          <p>See the striking stripes of our zebras</p>
+          <div class="quick-fact"><i class="fas fa-info-circle"></i> Each zebra has a unique stripe pattern</div>
+        </div>
+        <button class="sound-trigger mobile" data-sound="sounds/zebra.mp3" aria-label="Play zebra sound">
+          <i class="fas fa-volume-up"></i>
+          <span>Hear Sound</span>
+        </button>
+      </a>
+    </article>
+
+    
+    <article class="animal-card">
+      <a href="tigers.html" class="info-box">
+        <img src="images/tiger-tn.png" alt="Tiger" class="animal-thumbnail">
+        <div class="animal-info">
+          <h3>TIGERS</h3>
+          <p>Majestic and powerful big cats</p>
+          <div class="quick-fact"><i class="fas fa-info-circle"></i> Tigers are excellent swimmers</div>
+        </div>
+        <button class="sound-trigger mobile" data-sound="sounds/tiger.mp3" aria-label="Play tiger sound">
+          <i class="fas fa-volume-up"></i>
+          <span>Hear Sound</span>
+        </button>
+      </a>
+    </article>
+
+    
+    <article class="animal-card">
+      <a href="rhinos.html" class="info-box">
+        <img src="images/rhino-tn.jpeg" alt="Rhino" class="animal-thumbnail">
+        <div class="animal-info">
+          <h3> RHINOS</h3>
+          <p>Mighty protectors of the savannah</p>
+          <div class="quick-fact"><i class="fas fa-info-circle"></i> Rhino horns are made of keratin</div>
+        </div>
+        <button class="sound-trigger mobile" data-sound="sounds/rhino.mp3" aria-label="Play rhino sound">
+          <i class="fas fa-volume-up"></i>
+          <span>Hear Sound</span>
+        </button>
+      </a>
+    </article>
+
+    
+    <article class="animal-card">
+      <a href="flamingos.html" class="info-box">
+        <img src="images/flamingos-tn.jpg" alt="Flamingo" class="animal-thumbnail">
+        <div class="animal-info">
+          <h3>FLAMINGOS</h3>
+          <p>Vibrant pink birds in shallow waters</p>
+          <div class="quick-fact"><i class="fas fa-info-circle"></i> Their color comes from their diet</div>
+        </div>
+        <button class="sound-trigger mobile" data-sound="sounds/flammingo.mp3" aria-label="Play flamingo sound">
+          <i class="fas fa-volume-up"></i>
+          <span>Hear Sound</span>
+        </button>
+      </a>
+    </article>
+
+  </div>
+</main>
+
+<nav id="tabs-bottom">
+  <a href="weather.html"><i class="fas fa-sun"></i> WEATHER</a>
+  <a href="feedback.html"><i class="fas fa-comment-dots"></i> FEEDBACK</a>
+</nav>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const soundButtons = document.querySelectorAll('.sound-trigger');
+    let currentAudio = null;
+
+    const isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+
+    soundButtons.forEach(button => {
+      button.addEventListener('click', function (e) {
+        e.stopPropagation();
+        playSound(this);
+      });
+
+      if (!isMobile) {
+        button.addEventListener('mouseenter', function () {
+          playSound(this);
+        });
+      }
+    });
+
+    function playSound(button) {
+      const soundFile = button.getAttribute('data-sound');
+      const icon = button.querySelector('i');
+
+      if (currentAudio) {
+        currentAudio.pause();
+        currentAudio.currentTime = 0;
+      }
+
+      icon.classList.replace('fa-volume-up', 'fa-spinner');
+      icon.classList.add('sound-loading');
+
+      currentAudio = new Audio(soundFile);
+
+      currentAudio.play().then(() => {
+        resetIcon(icon);
+      }).catch(err => {
+        console.error("Sound failed:", err);
+        icon.classList.replace('fa-spinner', 'fa-exclamation-circle');
+        icon.classList.remove('sound-loading');
+        setTimeout(() => resetIcon(icon), 2000);
+      });
+
+      currentAudio.onended = () => resetIcon(icon);
+    }
+
+    function resetIcon(icon) {
+      icon.classList.replace('fa-spinner', 'fa-volume-up');
+      icon.classList.replace('fa-exclamation-circle', 'fa-volume-up');
+      icon.classList.remove('sound-loading');
+    }
+  });
+</script>
 </body>
 </html>
